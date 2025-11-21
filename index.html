@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Nimisha's Website</h1>
+<p id="result"></p>
+
+<script>
+fetch("https://uaqukalhpk.execute-api.eu-west-1.amazonaws.com/default/NimishaFirstMS?name=Nimisha")
+  .then(res => res.text())
+  .then(data => document.getElementById("result").innerHTML = data)
+</script>
+
+</body>
+</html>
